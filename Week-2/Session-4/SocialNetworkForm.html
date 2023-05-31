@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Form</title>
+    <style>
+        body {
+            position: relative;
+        }
+        /* Why do i have to define this ?
+        Without this css block my absolute positioning doesn't work */
+        .input-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+         .textarea-row {
+            display: flex;
+            margin-bottom: 45px;
+        }
+        input {
+            position: absolute;
+            margin-left: 150px;
+        }
+        textarea {
+            position: absolute;
+            margin-left: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Join a social network</h1>
+    <form action="SocialNetworkForm.html" method="post" enctype="multipart/form-data">
+            <div class="input-row">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="full_name"/>
+            </div>
+            <div class="input-row">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email_address" />
+            </div>
+            <div class="textarea-row">
+                <label for="description">About you:</label>
+                <textarea rows="3" cols="50" id="description" name="description"></textarea>
+            </div>
+            <div class="input-row">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" />
+            </div>
+            <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
