@@ -9,24 +9,22 @@
         body {
             position: relative;
         }
-        /* Why do i have to define this ?
-        Without this css block my absolute positioning doesn't work */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         .input-row {
             display: flex;
-            margin-bottom: 10px;
         }
-         .textarea-row {
+        .textarea-row {
             display: flex;
-            margin-bottom: 45px;
         }
-        input {
-            position: absolute;
-            margin-left: 150px;
+        label {
+            flex-basis: 150px;
         }
-        textarea {
-            position: absolute;
-            margin-left: 150px;
-            margin-bottom: 10px;
+        button {
+            width: 100px;
         }
     </style>
 </head>
