@@ -1,0 +1,23 @@
+#game-table {
+ border: 2px solid green;
+ text-align: center;
+ height: 200px;
+ width: 400px;
+}
+caption {
+    color: #ffffff;
+    background-color: green;
+    text-transform: uppercase;
+    padding : 10px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgreen;
+}
+th {
+    font-weight: bold;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
