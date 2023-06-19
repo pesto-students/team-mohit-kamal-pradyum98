@@ -15,7 +15,7 @@ const playGuessingGame = (numToGuess, totalGuesses = 10) => {
             continue;
         }
 
-        var guess = parseInt(userInput, 10);
+        let guess = parseInt(userInput, 10);
 
         if (guess < numToGuess) {
             promptText = guess + ' is too small. Guess a larger number.';
