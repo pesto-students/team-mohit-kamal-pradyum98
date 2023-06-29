@@ -1,0 +1,32 @@
+img {
+    height: 60px;
+    width: 300px;
+}
+h1 {
+    background-color: red;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+#author-name-and-date {
+    color: lightgray;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+p + img {
+    height: 300px;
+}
+
+p , ol > li {
+    color: gray;
+    font-size: 16px;
+}
+
+a {
+    font-family: Arial;
+    font-size: 12px;
+    color: blue;
+}
