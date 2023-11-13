@@ -3,8 +3,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-width: 600px; /* You can set a max-width to keep the layout consistent */
-  margin: auto; /* This will center your book list on the page */
+  max-width: 600px;
+  margin: auto;
 }
 
 .book-list-item {
