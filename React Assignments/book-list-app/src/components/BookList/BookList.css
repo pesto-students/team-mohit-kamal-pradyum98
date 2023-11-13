@@ -1,4 +1,14 @@
 /* BookList.css */
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
 .book-list {
   list-style-type: none;
   padding: 0;
@@ -27,3 +37,4 @@
   font-size: 2em;
   color: #2c3e50;
 }
+
