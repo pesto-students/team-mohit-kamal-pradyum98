@@ -1,0 +1,12 @@
+.project-details {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}

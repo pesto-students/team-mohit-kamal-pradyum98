@@ -1,0 +1,21 @@
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 3px solid #333;
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,23 @@
+/* SkillsPage.css */
+.skills-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+}
+
+.skill-item:hover {
+  background-color: #e7e7e7;
+}

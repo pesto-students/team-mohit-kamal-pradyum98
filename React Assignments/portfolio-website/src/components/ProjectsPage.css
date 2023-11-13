@@ -1,0 +1,30 @@
+/* ProjectsPage.css */
+.projects-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.project-item h3 {
+  margin-top: 10px;
+}
+
+.project-item p {
+  font-size: 0.9em;
+}
