@@ -1,0 +1,29 @@
+/* BookList.css */
+.book-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px; /* You can set a max-width to keep the layout consistent */
+  margin: auto; /* This will center your book list on the page */
+}
+
+.book-list-item {
+  background-color: #f9f9f9;
+  border-left: 5px solid #2c3e50; /* A simple left border for a modern look */
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+.book-list-item:hover {
+  background-color: #e9e9e9;
+  border-left-color: #3498db; /* Change border color on hover for a nice effect */
+  cursor: pointer;
+}
+
+.book-list-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  color: #2c3e50;
+}
