@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css'; // Ensure this is imported for styling
+import '../App.css';
 
 function Form({ onFormSubmit }) {
     const [age, setAge] = useState('');

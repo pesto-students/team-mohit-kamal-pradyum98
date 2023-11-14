@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Form from './components/Form';
-import GiftList from './components/GiftList';
 import axios from 'axios';
+const GiftList = React.lazy(() => import('./components/GiftList')); // Lazy-loaded component
 
 function App() {
     const [formData, setFormData] = useState({});
@@ -30,7 +30,7 @@ function App() {
                     },
                     {
                         headers: {
-                            Authorization: `Bearer ${API_KEY}`,
+                            Authorization: `Bearer `,
                             'Content-Type': 'application/json'
                         }
                     }
@@ -55,7 +55,9 @@ function App() {
         <div className="App">
             <Header />
             <Form onFormSubmit={handleFormSubmit} />
-            <GiftList gifts={gifts} />
+            <Suspense fallback={<div>Loading Gift Details...</div>}>
+                {gifts.length && <GiftList gifts={gifts} />}
+            </Suspense>
         </div>
     );
 }
