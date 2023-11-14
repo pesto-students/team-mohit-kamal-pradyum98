@@ -12,7 +12,6 @@ function App() {
     useEffect(() => {
         if (formData.age && formData.gender && formData.interest) {
             const OPENAI_API_ENDPOINT = 'https://api.openai.com/v1/chat/completions';
-            const API_KEY = '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';
             axios
                 .post(
                     OPENAI_API_ENDPOINT,
