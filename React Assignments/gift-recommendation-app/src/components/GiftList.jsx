@@ -1,7 +1,10 @@
 import React from 'react';
 import '../App.css';
+import { useSelector } from 'react-redux';
 
-function GiftList({ gifts }) {
+function GiftList() {
+    const gifts = useSelector((state) => state.giftRecommendations.gifts);
+    console.log(gifts, 'gifts');
     return (
         <div className="gift-list">
             {gifts.length > 0 ? (
