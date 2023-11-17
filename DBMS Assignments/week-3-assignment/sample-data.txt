@@ -1,0 +1,14 @@
+// Insert into 'movies' collection
+db.movies.insertMany([
+    { title: "Movie Title 1", release_year: 2020, genre: "Drama", director_id: "dir1", actors: ["act1", "act2"] }
+]);
+
+// Insert into 'directors' collection
+db.directors.insertMany([
+    { name: "Director Name 1", nationality: "American", movies_directed: ["movie1", "movie2"] }
+]);
+
+// Insert into 'actors' collection
+db.actors.insertMany([
+    { name: "Actor Name 1", nationality: "British", movies_acted_in: ["movie1", "movie3"] }
+]);
