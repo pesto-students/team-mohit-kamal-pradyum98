@@ -1,0 +1,13 @@
+Database Schema Design
+Movies Collection
+
+Fields: title, release_year, genre, director_id, actors (array of actor IDs)
+Each movie document will reference its director and list of actors.
+Directors Collection
+
+Fields: name, nationality, movies_directed (array of movie IDs)
+Each director document will have a list of movies they directed.
+Actors Collection
+
+Fields: name, nationality, movies_acted_in (array of movie IDs)
+Each actor document will have a list of movies they acted in.
